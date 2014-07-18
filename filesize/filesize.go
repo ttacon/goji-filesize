@@ -7,6 +7,8 @@ import (
 	"path"
 )
 
+// TODO(ttacon): refactor to return formatted lines to print,
+// because only printing some (in case of DirsLines) is gross
 func DirsLines(dirs []string) error {
 	for _, dir := range dirs {
 		if err := DirLines(dir); err != nil {
